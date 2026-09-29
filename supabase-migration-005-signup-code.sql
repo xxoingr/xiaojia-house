@@ -18,6 +18,9 @@ create table if not exists public.xj_app_config (
   value text not null
 );
 
+-- 开启 RLS 且不建任何策略：前端完全读不到这张表，只能通过下面的函数校验通行码
+alter table public.xj_app_config enable row level security;
+
 insert into public.xj_app_config(key, value)
 values ('signup_code', 'CHANGE_ME')
 on conflict (key) do update set value = excluded.value;
