@@ -1,0 +1,15 @@
+# 发布用副本（由 upload-github-pages.ps1 上传到 xiaojia-house-pages）
+public/
+
+# 私人素材
+图片/
+
+# 给 AI 的交接笔记、进度记录、上传日志
+*-HANDOFF.md
+SESSION_PROGRESS.md
+upload-log.txt
+一键上传公网.bat
+
+# 临时检查脚本（只保留提醒重试策略的测试）
+work/*
+!work/reminder-retry-check.mjs
