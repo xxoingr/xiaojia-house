@@ -94,3 +94,19 @@ SUPABASE-SETUP.md           Supabase 接入说明
 功能都做完、两人也用了一段时间后，我们慢慢不再打开它了。原因很简单：**日常的聊天和分享，微信已经够用，没必要多开一个软件。**
 
 这让我意识到，功能做得再全，也要先回答一个问题：用户为什么要离开他们已经习惯的工具，来用我的？下一个产品我会先想清楚这一点。
+
+## ⚠️ 免责声明
+
+- 这是给我和女朋友自用的个人项目，只供学习参考，不保证可用性和数据安全，使用产生的后果由使用者自行承担。
+- 在线地址需要通行码才能注册，不对外开放。
+- 自己部署时，推送私钥、定时任务令牌等密钥请放在 Supabase Vault 或环境变量里，不要提交到仓库。
+
+## 致谢
+
+- [supabase/supabase-js](https://github.com/supabase/supabase-js)（MIT）：`vendor/supabase.min.js` 是它的打包文件
+- [porsager/postgres](https://github.com/porsager/postgres)（Unlicense）：Edge Function 里连接数据库
+- [negrel/webpush](https://github.com/negrel/webpush)（MIT）：Edge Function 里发送 Web Push 推送
+
+## License
+
+[MIT](LICENSE) © 2026 xxoingr
