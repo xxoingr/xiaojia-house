@@ -10,7 +10,7 @@ import {
 const dbUrl = Deno.env.get("SUPABASE_DB_URL");
 if (!dbUrl) throw new Error("SUPABASE_DB_URL is missing");
 const sql = postgres(dbUrl, { max: 1 });
-const APP_URL = "https://xxoingr.github.io/xiaojia-house-pages/";
+const APP_URL = "https://xxoingr.github.io/xiaojia-house/";
 
 async function secret(name: string): Promise<string> {
   const rows = await sql`select decrypted_secret from vault.decrypted_secrets where name = ${name} limit 1`;

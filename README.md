@@ -2,7 +2,9 @@
 
 > 给我和女朋友做的私密情侣生活软件，可以像 App 一样装到手机桌面。
 >
-> 在线地址：https://xxoingr.github.io/xiaojia-house-pages/ （注册需要通行码）
+> 2026 年 8 月做的小 demo，现在不再更新。
+>
+> 在线地址：https://xxoingr.github.io/xiaojia-house/ （注册需要通行码）
 
 ## 为什么做
 
@@ -29,7 +31,7 @@
 | 安装与离线 | PWA：Web App Manifest + Service Worker（缓存、推送通知） |
 | 后端 | [Supabase](https://supabase.com/)：Postgres 数据库、邮箱登录、私密文件存储 |
 | 定时提醒 | Supabase Edge Function（Deno / TypeScript），由 `pg_cron` 每分钟调用 |
-| 部署 | GitHub Pages，PowerShell 脚本通过 GitHub API 发布 |
+| 部署 | GitHub Pages，直接从本仓库的 main 分支发布 |
 
 ## 架构
 
@@ -61,7 +63,6 @@ supabase-setup.sql          初始数据库结构、访问规则、小屋函数
 supabase-migration-*.sql    后续迁移
 supabase-reminders*.sql     待办提醒相关表和定时任务
 supabase-functions/         Edge Function：发送待办提醒
-upload-github-pages.ps1     发布到 GitHub Pages
 SUPABASE-SETUP.md           Supabase 接入说明
 ```
 

@@ -1,4 +1,4 @@
-# 发布用副本（由 upload-github-pages.ps1 上传到 xiaojia-house-pages）
+# 以前的发布用副本（网站现在直接从本仓库发布）
 public/
 
 # 私人素材
